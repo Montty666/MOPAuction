@@ -1,0 +1,12 @@
+:root {
+    --spacing: 2px;
+
+    --main-bg: #f7cb15;
+    --dark-main-bg:  #debc2a;
+
+    --red: red;
+
+    --gray: gray;
+    --secondary-gray: #333;
+    --contrast-gray: #eee;
+}

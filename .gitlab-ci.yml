@@ -1,0 +1,26 @@
+image: docker-proxy.kontur.host/node
+
+dist:
+  stage: build
+  cache:
+    paths:
+      - node_modules/
+  script:
+    - npm ci --legacy-peer-deps
+    - npm run build
+  artifacts:
+    paths:
+      - dist
+
+pages:
+  stage: deploy
+  dependencies: 
+    - dist
+  script:
+    - rm -rf public
+    - mv dist public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master

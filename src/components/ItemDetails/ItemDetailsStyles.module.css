@@ -1,0 +1,7 @@
+.container {
+    position: relative;
+    top: 48px;
+    height: calc(100vh - 48px);
+    display: flex;
+    justify-content: center;
+}

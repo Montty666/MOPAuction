@@ -1,0 +1,9 @@
+.kunteynir {
+    display: flex;
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    top: 54px;
+}
